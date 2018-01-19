@@ -1,0 +1,8 @@
+.social {
+	display: inline-block;
+	opacity: 0.4;
+}
+
+a:hover {
+	opacity: 1;
+}
