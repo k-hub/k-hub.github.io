@@ -1,0 +1,36 @@
+#container {
+	width: 100%;
+	margin: 5em auto;
+	padding: 0;
+	background: #fff;
+}
+
+.items {
+	max-width: 1500px;
+	height: 900px;
+}
+
+.items >img {
+	width: 1500px;
+	height: 900px;
+}
+
+#left, #right {
+	margin: 30px;
+}
+
+/*@media (max-width: 650px) {
+	.slides-wrapper {
+		width: 400px;
+	}
+
+	.items {
+		min-width: 400px;
+		height: 200px;
+	}
+
+	.items >img {
+		width: 400px;
+		height: 200px;
+	}
+}*/

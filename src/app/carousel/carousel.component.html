@@ -1,0 +1,30 @@
+<div id="container">
+  <div
+    ng2-carouselamos
+    class="slides-wrapper"
+    [items]="items"
+    [width]="1500"
+    [$prev]="prev"
+    [$next]="next"
+    [$item]="item"
+  >
+  </div>
+
+
+<ng-template #prev>
+  <img src="../assets/arrows/arrow-left.svg" id="left" />
+</ng-template>
+
+<ng-template #next>
+  <img src="../assets/arrows/arrow-right.svg" id="right" />
+</ng-template>
+
+<ng-template #item let-item let-i="index">
+
+    <div class="items">
+      <img *ngIf="item.type === 'image'" src="{{ item.src }}">
+      <video *ngIf="item.type === 'video'" controls="controls" width="1500" height="900" 
+       name="item.name" src="{{ item.src }}"></video>    
+    </div>
+
+</ng-template>
