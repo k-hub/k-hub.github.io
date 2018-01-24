@@ -13,7 +13,7 @@ export class SampleWorkComponent implements OnInit {
 
   constructor(private samplesService: SamplesService) { }
 	getSamples(): void {
-		this.samples = this.samplesService.getSamples();
+		this.samplesService.getSamples().subscribe(samples => this.samples = samples);
 	}	
 
 	openCarousel(index) {
