@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = `Hi, I'm Kathy.`;
   subheader = `A front end web developer by day and an amateur chef by night.`;
+  show = false;
+
+  onShow(event) {
+  	this.show = event;
+  }
 }

@@ -1,10 +1,8 @@
 <div>Take a look at some of the features I have worked on:</div>
 
-<video controls="controls" width="800" height="600" 
-       name="Video Name" src="../../assets/sample-work/approvals.mov"></video>
-<video controls="controls" width="800" height="600" 
-       name="Video Name" src="../../assets/sample-work/guest_send_widget.mp4"></video>
-<video controls="controls" width="800" height="600" 
-       name="Video Name" src="../../assets/sample-work/permissions.mp4"></video>              
-<img src="../../assets/sample-work/paywall.png">
-<img src="../../assets/sample-work/edit_approval.png">
+<div class="samples">
+	<div *ngFor="let sample of samples; let i = index;" (click)="openCarousel(i)">
+		<video *ngIf="sample.type === 'video'" controls="controls" src="{{ sample.src }}"></video>
+		<img *ngIf="sample.type === 'image'" src="{{ sample.src }}">
+	</div>
+</div>

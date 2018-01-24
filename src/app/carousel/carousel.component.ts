@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+import { SamplesService } from '../services/samples.service';
 
 @Component({
   selector: 'app-carousel',
@@ -7,17 +8,25 @@ import { Ng2CarouselamosModule } from 'ng2-carouselamos';
   styleUrls: ['./carousel.component.css']
 })
 export class CarouselComponent implements OnInit {
-	items: Array<any> = [];
+  @Input() show: boolean;
+  @Output() close: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  constructor() { 
-  	this.items = [
-  		{ name: 'editApproval', src: '../assets/sample-work/edit_approval.png', type: 'image'}, 
-  		{ name: 'paywall', src: '../assets/sample-work/paywall.png', type: 'image'},
-  		{ name: 'permissions', src: '../assets/sample-work/permissions.mp4', type: 'video'}
-  	];
+	samples: Array<object> = [];
+
+  constructor(private samplesService: SamplesService) { }
+
+  getSamples(): void {
+    this.samples = this.samplesService.getSamples();
   }
 
+  closeCarousel() {
+    this.show = false;
+    this.close.emit(this.show);
+  }
+
+
   ngOnInit() {
+    this.getSamples();
   }
 
 }
