@@ -2,7 +2,7 @@
 
 <div class="samples">
 	<div *ngFor="let sample of samples; let i = index;" (click)="openCarousel(i)">
-		<video *ngIf="sample.type === 'video'" controls="controls" src="{{ sample.src }}"></video>
 		<img *ngIf="sample.type === 'image'" src="{{ sample.src }}">
+		<video *ngIf="sample.type === 'video'" controls="controls" src="{{ sample.src }}"></video>
 	</div>
 </div>
