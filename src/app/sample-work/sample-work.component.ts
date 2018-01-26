@@ -8,17 +8,20 @@ import { SamplesService } from '../services/samples.service';
 })
 export class SampleWorkComponent implements OnInit {
 	@Input() show: boolean;
-	@Output() change: EventEmitter<boolean> = new EventEmitter<boolean>();
+	@Output() change: EventEmitter<object> = new EventEmitter<object>();
 	samples: Array<object> = [];
 
   constructor(private samplesService: SamplesService) { }
+
 	getSamples(): void {
 		this.samplesService.getSamples().subscribe(samples => this.samples = samples);
 	}	
 
 	openCarousel(index) {
 		this.show = true;
-		this.change.emit(this.show);
+
+		// Emit to parent to open carousel along with start index of carousel
+		this.change.emit({ show: this.show, carouselStartIndex: index });
 	}
 
 	ngOnInit() {

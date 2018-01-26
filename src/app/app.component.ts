@@ -8,9 +8,18 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = `Hi, I'm Kathy.`;
   subheader = `A front end web developer by day and an amateur chef by night.`;
-  show = false;
+  show: boolean = false;
+  carouselStartIndex: number = 0;
 
-  onShow(event) {
-  	this.show = event;
+  openCarousel(event) {
+  	// Flag to open carousel
+  	this.show = event.show;
+
+  	// Set start index for carousel
+  	this.carouselStartIndex = event.carouselStartIndex;
+  }
+
+  closeCarousel(event) {
+  	this.show = event.show;
   }
 }

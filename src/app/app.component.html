@@ -6,5 +6,5 @@
 </div>
 
 <app-contact></app-contact>
-<app-sample-work [(show)]="show" (change)="onShow($event)"></app-sample-work>
-<app-carousel [(show)]="show" (close)="onShow($event)"></app-carousel>
+<app-sample-work [(show)]="show" (change)="openCarousel($event)"></app-sample-work>
+<app-carousel [(show)]="show" [carouselStartIndex]="carouselStartIndex" (close)="closeCarousel($event)"></app-carousel>
