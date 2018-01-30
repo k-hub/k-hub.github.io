@@ -1,16 +1,24 @@
+/**
+ * app-sample-work variables
+ */
+$app-sample-work-grid-height: 200px;
+
+/**
+ * app-sample-work styles
+ */
 .samples {
 	display: grid;
 	grid-gap: 5px;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-template-rows: repeat(2, 200px);
+	grid-template-rows: repeat(2, $app-sample-work-grid-height);
 
-	> div > img {
+	> img {
 		width: 100%; height: 100%;
 		object-fit: fill;	
 	}
 
-	> div > video {
-		width: 100%; height: 100%;
+	> video {
+		width: 100%;  min-height: $app-sample-work-grid-height; height: 100%;
 		object-fit: fill;
 	}
 }

@@ -1,8 +1,8 @@
-<div>Take a look at some of the features I have worked on:</div>
+<div>Take a look at some of the features I have worked on</div>
 
 <div class="samples">
-	<div *ngFor="let sample of samples; let i = index;" (click)="openCarousel(i)">
-		<img *ngIf="sample.type === 'image'" src="{{ sample.src }}">
-		<video *ngIf="sample.type === 'video'" controls="controls" src="{{ sample.src }}"></video>
-	</div>
+	<ng-container *ngFor="let sample of samples">
+		<img *ngIf="sample.type === 'image'" ng-box [group]="groupName" [src]="sample.src">
+		<video *ngIf="sample.type === 'video'" controls controlsList="nodownload" ng-box [group]="groupName"[src]="sample.src"></video>
+	</ng-container>
 </div>

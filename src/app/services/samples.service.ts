@@ -9,7 +9,7 @@ export class SamplesService {
 
   constructor() { }
 
-  getSamples(): Observable<Object[]> {
+  getSamples(): Observable<Array<object>> {
   	return of(SAMPLES);
   }
 }

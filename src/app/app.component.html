@@ -1,10 +1,5 @@
-<div style="text-align:center">
-  <h1>
-    {{ title }}
-  </h1>
-  <h2>{{ subheader }}</h2>
-</div>
-
+<app-hero-container></app-hero-container>
 <app-contact></app-contact>
-<app-sample-work [(show)]="show" (change)="openCarousel($event)"></app-sample-work>
-<app-carousel [(show)]="show" [carouselStartIndex]="carouselStartIndex" (close)="closeCarousel($event)"></app-carousel>
+<app-about-me></app-about-me>
+<app-sample-work></app-sample-work>
+<ngbox></ngbox>

@@ -7,25 +7,15 @@ import { SamplesService } from '../services/samples.service';
   styleUrls: ['./sample-work.component.scss']
 })
 export class SampleWorkComponent implements OnInit {
-	@Input() show: boolean;
-	@Output() change: EventEmitter<object> = new EventEmitter<object>();
 	samples: Array<object> = [];
+	groupName: string = 'carousel';
 
-  constructor(private samplesService: SamplesService) { }
-
-	getSamples(): void {
-		this.samplesService.getSamples().subscribe(samples => this.samples = samples);
-	}	
-
-	openCarousel(index) {
-		this.show = true;
-
-		// Emit to parent to open carousel along with start index of carousel
-		this.change.emit({ show: this.show, carouselStartIndex: index });
+  constructor(private samplesService: SamplesService) { }	
+    getSamples() {
+	    this.samplesService.getSamples().subscribe(samples => this.samples = samples);
 	}
 
 	ngOnInit() {
 		this.getSamples();
 	}
-
 }

@@ -8,19 +8,20 @@
     [$item]="sample">
   </div>
 
-<!-- Carousel Controls -->
-<ng-template #prev>
-  <img src="../assets/arrows/arrow-left-dark-gray.svg" id="left" />
-</ng-template>
+  <!-- Carousel Controls -->
+  <ng-template #prev>
+    <img src="../assets/arrows/arrow-left-dark-gray.svg" id="left" />
+  </ng-template>
 
-<ng-template #next>
-  <img src="../assets/arrows/arrow-right-dark-gray.svg" id="right" />
-</ng-template>
+  <ng-template #next>
+    <img src="../assets/arrows/arrow-right-dark-gray.svg" id="right" />
+  </ng-template>
 
-<!-- Carousel -->
-<ng-template #sample let-sample let-i="index">
-    <div class="samples">
-      <img *ngIf="sample.type === 'image'" src="{{ sample.src }}">
-      <video *ngIf="sample.type === 'video'" controls="controls" src="{{ sample.src }}"></video>    
-    </div>
-</ng-template>
+  <!-- Carousel -->
+  <ng-template #sample let-sample let-i="index">
+      <div class="samples">
+        <img *ngIf="sample.type === 'image'" src="{{ sample.src }}">
+        <video *ngIf="sample.type === 'video'" controls="controls" src="{{ sample.src }}"></video>    
+      </div>
+  </ng-template>
+</div>
