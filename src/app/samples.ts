@@ -1,13 +1,8 @@
 export const SAMPLES: Array<object> = [
-	{ name: 'editApproval',
-	  src: '../assets/sample-work/edit_approval.png',
-	  type: 'image',
-	  title: 'Modifying an Approval Request'
-	}, 
-	{ name: 'paywall',
-	  src: '../assets/sample-work/paywall.png',
-	  type: 'image',
-	  title: 'Paywall'
+	{ name: 'guestSendWidget',
+	  src: '../assets/sample-work/guest_send_widget.mp4',
+	  type: 'video',
+	  title: 'Guest Send Widget'
 	},
 	{ name: 'permissions',
 	  src: '../assets/sample-work/permissions.mp4',
@@ -19,9 +14,14 @@ export const SAMPLES: Array<object> = [
 	  type: 'video',
 	  title: 'Creating an Approval Request'
 	},
-	{ name: 'guestSendWidget',
-	  src: '../assets/sample-work/guest_send_widget.mp4',
-	  type: 'video',
-	  title: 'Guest Send Widget'
+	{ name: 'editApproval',
+	  src: '../assets/sample-work/edit_approval.png',
+	  type: 'image',
+	  title: 'Modify an Approval Request'
+	},
+	{ name: 'paywall',
+	  src: '../assets/sample-work/paywall.png',
+	  type: 'image',
+	  title: 'Paywall'
 	}
 ];
