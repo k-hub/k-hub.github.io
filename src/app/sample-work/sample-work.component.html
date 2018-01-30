@@ -2,7 +2,7 @@
 
 <div class="samples">
 	<ng-container *ngFor="let sample of samples">
-		<img *ngIf="sample.type === 'image'" ng-box [group]="groupName" [src]="sample.src">
-		<video *ngIf="sample.type === 'video'" controls controlsList="nodownload" ng-box [group]="groupName"[src]="sample.src"></video>
+		<img *ngIf="sample.type === 'image'" ng-box [group]="groupName" [src]="sample.src" [title]="sample.title">
+		<video *ngIf="sample.type === 'video'" controls controlsList="nodownload" ng-box [group]="groupName"[src]="sample.src" [title]="sample.title"></video>
 	</ng-container>
 </div>
