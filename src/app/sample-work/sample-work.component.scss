@@ -8,16 +8,11 @@ $app-sample-work-grid-height: 200px;
  */
 .samples {
 	display: grid;
-	grid-gap: 5px;
+	grid-gap: 20px;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	grid-template-rows: repeat(2, $app-sample-work-grid-height);
 
-	> img {
-		width: 100%; height: 100%;
-		object-fit: fill;	
-	}
-
-	> video {
+	> img, > video {
 		width: 100%;  min-height: $app-sample-work-grid-height; height: 100%;
 		object-fit: fill;
 	}
