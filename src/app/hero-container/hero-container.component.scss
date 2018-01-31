@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
 	text-align: center;
-	background: aliceblue;
+	background-color: aliceblue;
 
 	.header {
 		font-size: 8vh;
@@ -13,19 +13,19 @@
 	.subheader {
 		font-size: 4vh;
 	}
+
+	.contact-container {
+		margin-top: 1vh
+
+		::ng-deep a.social {
+			margin: 0 0.25vh;
+			background-size: 4vh 4vh;
+			width: 4vh; height: 4vh;
+		}
+	}
 }
 
-@media only screen and (max-width: 400px) and (max-height: 500px){
-	.header {
-		font-size: 48px !important;
-	}
-
-	.subheader {
-		font-size: 24px !important;
-	}
-}
-
-@media only screen and (max-height: 500px){
+@media only screen and (max-width: 400px){
 	.header {
 		font-size: 48px !important;
 	}
@@ -39,4 +39,21 @@
 	.hero-container {
 		height: 300px;
 	}
+
+	.header {
+		font-size: 48px !important;
+	}
+
+	.subheader {
+		font-size: 24px !important;
+	}
+}
+
+@media only screen and (max-height: 700px){
+	.contact-container {
+		::ng-deep a.social {
+			background-size: 28px 28px !important; 
+			width: 28px !important; height: 28px !important;
+		}
+	}	
 }
