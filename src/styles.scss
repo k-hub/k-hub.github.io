@@ -3,6 +3,7 @@
  */
 $global-background-color: #F1F1F1FF;
 $global-font-color: #292929;
+$global-header-container-bg-color: aliceblue;
 
 /**
  * Global styles
@@ -17,15 +18,15 @@ body {
 .github {
 	background-image: url('/assets/icons/github.svg');
 	background-repeat: no-repeat;
-	background-size: 20px 20px;
-	width: 20px; height: 20px;
+    background-size: 25px 25px;
+    width: 25px; height: 25px;
 }
 
 .linkedin {
 	background-image: url('/assets/icons/linkedin-black.svg');
 	background-repeat: no-repeat;	
-	background-size: 20px 20px;
-	width: 20px; height: 20px;
+    background-size: 25px 25px;
+    width: 25px; height: 25px;
 }
 
 button:disabled {
@@ -34,4 +35,8 @@ button:disabled {
 
 .g-border-bot {
 	border-bottom: 1px solid white;
+}
+
+.nav-bar, .hero-container {
+	background-color: $global-header-container-bg-color;
 }
