@@ -7,6 +7,12 @@ a:hover {
 	opacity: 1;
 }
 
+// Preload asset to avoid the delay on hover
+a.social.linkedin:after {
+	display: none;
+	content: url('/assets/icons/linkedin-blue.svg');
+}
+
 a.social.linkedin:hover {
 	background-image: url('/assets/icons/linkedin-blue.svg');
 }
