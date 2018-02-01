@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+	tabs: Array<object> = [
+		{ id: 'my-work', name: 'My Work' },
+		{ id: 'about-me', name: 'About Me' },
+		{ id: 'contact', name: 'Contact' }
+	];
+
+	scrollIntoView(elementId) {
+		const element = document.getElementById(elementId);
+		element.scrollIntoView();
+	}
 }

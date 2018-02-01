@@ -1,5 +1,16 @@
+<div class="nav-bar">
+	<span *ngFor = "let tab of tabs" class="tab" (click)="scrollIntoView(tab.id)">{{ tab.name }}</span>
+</div>
+
 <app-hero-container></app-hero-container>
-<app-sample-work></app-sample-work>
-<app-about-me></app-about-me>
-<ngbox></ngbox>
-<app-contact></app-contact>
+
+<div id="my-work">
+	<ngbox></ngbox>
+	<app-sample-work></app-sample-work>
+</div>
+
+<div id="about-me">
+	<app-about-me></app-about-me>
+</div>
+
+<div class="footer" id="contact"><app-contact></app-contact></div>

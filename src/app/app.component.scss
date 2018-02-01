@@ -1,0 +1,19 @@
+.nav-bar {
+	padding-top: 15px;
+	text-align: center;
+
+	.tab {
+		padding: 0 20px;
+	    font-size: 2.5vh;
+    	opacity: 0.6;
+	}
+
+	.tab:hover {
+		opacity: 1;
+	}
+}
+
+.footer {
+    margin: 20px 0 15px 0;
+    text-align: center;
+}
