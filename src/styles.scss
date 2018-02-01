@@ -40,3 +40,19 @@ button:disabled {
 .nav-bar, .hero-container {
 	background-color: $global-header-container-bg-color;
 }
+
+.g-title {
+	font-size: 5vh;
+}
+
+@media screen and (max-height: 512px) {
+	.g-title {
+		font-size: 27px !important;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.g-title {
+		font-size: 27px !important;
+	}
+}
