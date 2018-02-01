@@ -12,7 +12,7 @@ export class AppComponent {
 		{ id: 'contact', name: 'Contact' }
 	];
 
-	scrollIntoView(elementId) {
+	scrollToContent(elementId) {
 		const element = document.getElementById(elementId);
 		element.scrollIntoView();
 	}

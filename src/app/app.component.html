@@ -1,5 +1,5 @@
 <div class="nav-bar">
-	<span *ngFor = "let tab of tabs" class="tab" (click)="scrollIntoView(tab.id)">{{ tab.name }}</span>
+	<span *ngFor = "let tab of tabs" class="tab" (click)="scrollToContent(tab.id)">{{ tab.name }}</span>
 </div>
 
 <app-hero-container></app-hero-container>

@@ -1,10 +1,20 @@
+/**
+ * app variables
+ */
+$app-bg-color: #FFFFFF;
+
+/**
+ * app styles
+ */
 .nav-bar {
-	padding-top: 15px;
+	padding: 15px 0;
+    font-size: 3vh;
 	text-align: center;
+	background-color: $app-bg-color;
+	white-space: nowrap;
 
 	.tab {
-		padding: 0 20px;
-	    font-size: 2.5vh;
+		padding: 0 2vh;
     	opacity: 0.6;
 	}
 
@@ -14,6 +24,34 @@
 }
 
 .footer {
-    margin: 20px 0 15px 0;
+    padding: 20px 0 15px 0;
     text-align: center;
+	background-color: $app-bg-color;
+
+	::ng-deep {
+		.social {
+		    margin: 0 0.5vh;
+		}
+	}
 }
+
+@media screen and (max-height: 500px) {
+	.nav-bar {
+		font-size: 16px;
+
+		.tab {
+			padding: 0 10px;
+		}		
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.nav-bar {
+		font-size: 16px;
+
+		.tab {
+			padding: 0 10px;
+		}		
+	}	
+}
+
