@@ -1,8 +1,12 @@
-<div>Take a look at some of the features I have worked on</div>
+<div class="outer-container g-border-bot">
+	<div class="samples-container">
+		<div class="title">Featured Work</div>
 
-<div class="samples">
-	<ng-container *ngFor="let sample of samples">
-		<img *ngIf="sample.type === 'image'" ng-box [group]="groupName" [src]="sample.src" [title]="sample.title">
-		<video *ngIf="sample.type === 'video'" controls controlsList="nodownload" ng-box [group]="groupName"[src]="sample.src" [title]="sample.title"></video>
-	</ng-container>
+		<div class="samples">
+			<ng-container *ngFor="let sample of samples">
+				<img *ngIf="sample.type === 'image'" ng-box [group]="groupName" [src]="sample.src" [title]="sample.title">
+				<video *ngIf="sample.type === 'video'" controls controlsList="nodownload" ng-box [group]="groupName"[src]="sample.src" [title]="sample.title"></video>
+			</ng-container>
+		</div>
+	</div>
 </div>

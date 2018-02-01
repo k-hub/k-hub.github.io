@@ -1,6 +1,6 @@
 .hero-container {
 	display: flex;
-    height: 50vh;
+    height: 75vh;
     flex-direction: column;
     justify-content: center;
 	text-align: center;
@@ -54,6 +54,15 @@
 		::ng-deep a.social {
 			background-size: 28px 28px !important; 
 			width: 28px !important; height: 28px !important;
+		}
+	}	
+}
+
+@media only screen and (max-width: 400px) and (min-height: 900px){
+	.contact-container {
+		::ng-deep a.social {
+			background-size: 36px 36px !important; 
+			width: 36px !important; height: 36px !important;
 		}
 	}	
 }

@@ -1,8 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+/**
+ * Global style variables
+ */
+$global-background-color: #F1F1F1FF;
+$global-font-color: #292929;
+
+/**
+ * Global styles
+ */
 body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
-	background-color: #F1F1F1FF;
+	background-color: $global-background-color;
+	color: $global-font-color;
 }
 
 .github {
@@ -21,4 +30,8 @@ body {
 
 button:disabled {
 	opacity: 0.2;
+}
+
+.g-border-bot {
+	border-bottom: 1px solid white;
 }
