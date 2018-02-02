@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { NgBoxModule } from 'ngbox/ngbox.module';
 
 import { SamplesService } from './services/samples.service';
@@ -25,7 +24,6 @@ import { HeroContainerComponent } from './hero-container/hero-container.componen
   ],
   imports: [
     BrowserModule,
-    Ng2CarouselamosModule,
     NgBoxModule,
     CommonModule
   ],
