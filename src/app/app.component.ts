@@ -16,4 +16,9 @@ export class AppComponent {
 		const element = document.getElementById(elementId);
 		element.scrollIntoView();
 	}
+
+	getCopyrightInfo() {
+		const year = new Date().getFullYear();
+		return `Handmade by me © ${year}`
+	}
 }

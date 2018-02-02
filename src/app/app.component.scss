@@ -24,7 +24,10 @@ $app-bg-color: #FFFFFF;
 }
 
 .footer {
-    padding: 20px 0 15px 0;
+    display: flex;
+	height: 120px;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 	background-color: $app-bg-color;
 
@@ -32,6 +35,10 @@ $app-bg-color: #FFFFFF;
 		.social {
 		    margin: 0 0.5vh;
 		}
+	}
+
+	.copyright {
+		padding: 12px 0;
 	}
 }
 
