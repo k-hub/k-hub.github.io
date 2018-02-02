@@ -29,7 +29,7 @@ $sample-work-grid-height: 200px;
 
 	> img, > video {
 		width: 100%; height: $sample-work-grid-height;
-		object-fit: fill;
+		object-fit: contain;
 		cursor: pointer;
 	}
 }
