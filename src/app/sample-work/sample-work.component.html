@@ -4,8 +4,8 @@
 
 		<div class="samples">
 			<ng-container *ngFor="let sample of samples">
-				<img *ngIf="sample.type === 'image'" ng-box [group]="groupName" [src]="sample.src" [title]="sample.title">
-				<video *ngIf="sample.type === 'video'" poster="{{ sample.poster }}" controlsList="nodownload" ng-box [group]="groupName"[src]="sample.src" [title]="sample.title"></video>
+				<img *ngIf="sample.type === 'image'" ng-box [group]="groupName" [src]="sample.src" [title]="sample.title" alt="{{ sample.title }}">
+				<video *ngIf="sample.type === 'video'" poster="{{ sample.poster }}" controlsList="nodownload" ng-box [group]="groupName"[src]="sample.src" [title]="sample.title">Your device does not support the video tag.</video>
 			</ng-container>
 		</div>
 	</div>
