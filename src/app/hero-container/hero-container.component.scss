@@ -6,11 +6,11 @@
 	text-align: center;
 
 	.header {
-		font-size: 8vh;
+		font-size: 78px;
 	}
 
 	.subheader {
-		font-size: 4vh;
+		font-size: 38px;
 	}
 
 	.contact-container {
@@ -24,35 +24,31 @@
 	}
 }
 
-@media only screen and (max-width: 411px){
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	.header {
+		font-size: 50px !important;
+	}
+
 	.subheader {
 		font-size: 22px !important;
 	}
 }
 
-@media only screen and (min-width: 412px) and (max-width: 480px){
+@media only screen and (min-width: 481px) and (max-width: 620px) {
 	.header {
-		font-size: 48px !important;
+		font-size: 60px !important;
 	}
 
 	.subheader {
-		font-size: 24px !important;
+		font-size: 28px !important;
 	}
 }
 
-@media only screen and (max-height: 630px){
+@media only screen and (max-height: 550px){
 	.hero-container {
-		height: 480px;
+		height: 412px;
 	}
-
-	.header {
-		font-size: 48px !important;
-	}
-
-	.subheader {
-		font-size: 24px !important;
-	}
-}
+}	
 
 @media only screen and (max-height: 700px){
 	.contact-container {
