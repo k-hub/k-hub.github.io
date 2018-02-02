@@ -13,6 +13,15 @@ a.social.linkedin:after {
 	content: url('/assets/icons/linkedin-blue.svg');
 }
 
+a.social.email:after {
+	display: none;
+	content:  url('/assets/icons/envelope-blue.svg');
+}
+
 a.social.linkedin:hover {
 	background-image: url('/assets/icons/linkedin-blue.svg');
+}
+
+a.social.email:hover {
+	background-image: url('/assets/icons/envelope-blue.svg');
 }
