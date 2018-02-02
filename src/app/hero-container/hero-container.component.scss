@@ -24,7 +24,13 @@
 	}
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 411px){
+	.subheader {
+		font-size: 22px !important;
+	}
+}
+
+@media only screen and (min-width: 412px) and (max-width: 480px){
 	.header {
 		font-size: 48px !important;
 	}
@@ -34,9 +40,9 @@
 	}
 }
 
-@media only screen and (max-height: 500px){
+@media only screen and (max-height: 630px){
 	.hero-container {
-		height: 300px;
+		height: 480px;
 	}
 
 	.header {
