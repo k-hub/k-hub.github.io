@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, HostListener } from '@angular/core';
 import { SamplesService } from '../services/samples.service';
 
 @Component({
@@ -9,13 +9,30 @@ import { SamplesService } from '../services/samples.service';
 export class SampleWorkComponent implements OnInit {
 	samples: Array<object> = [];
 	groupName: string = 'carousel';
+	mobile: boolean = false;
 
-  constructor(private samplesService: SamplesService) { }	
+	@HostListener('window:resize', ['$event'])
+	onResize($event) {
+		this.getWindowSize();
+	}
+
+  	constructor(private samplesService: SamplesService) { }	
+    
     getSamples() {
 	    this.samplesService.getSamples().subscribe(samples => this.samples = samples);
 	}
 
+	getWindowSize() {
+		if (window.innerWidth < 500) {
+			this.mobile = true;
+		} else {
+			this.mobile = false;
+		}
+	}
+
 	ngOnInit() {
+		this.getWindowSize();
+
 		this.getSamples();
 	}
 }
