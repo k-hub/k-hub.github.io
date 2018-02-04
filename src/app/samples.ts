@@ -12,7 +12,7 @@ export const SAMPLES: Array<object> = [
 	  poster: '../assets/sample-work/permissions_poster.png'
 	},
 	{ name: 'approvals',
-	  src: '../assets/sample-work/approvals.mov',
+	  src: '../assets/sample-work/approvals.mp4',
 	  type: 'video',
 	  title: 'Creating an Approval Request',
 	  poster: '../assets/sample-work/approvals_poster.png'
