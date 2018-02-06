@@ -33,6 +33,8 @@
 npm-debug.log
 testem.log
 /typings
+karma.conf.js
+protractor.conf.js
 
 # e2e
 /e2e/*.js
