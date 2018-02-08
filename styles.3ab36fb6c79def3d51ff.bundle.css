@@ -1,0 +1,6 @@
+/**
+ * Global style variables
+ */
+/**
+ * Global styles
+ */body{margin:0;font-family:Roboto,sans-serif;background-color:#F1F1F1FF;color:#292929}.github{background-image:url(https://k-hub.github.io/k-hub.github.io/assets/icons/github.svg)}.github,.linkedin{background-repeat:no-repeat;background-size:25px 25px;width:25px;height:25px}.linkedin{background-image:url(https://k-hub.github.io/k-hub.github.io/assets/icons/linkedin-black.svg)}.email{background-image:url(https://k-hub.github.io/k-hub.github.io/assets/icons/envelope.svg);background-repeat:no-repeat;background-size:25px 25px;width:25px;height:25px}button:disabled{opacity:.2}.g-border-bot{border-bottom:1px solid #fff}.hero-container,.nav-bar{background-color:#f0f8ff}.g-title{font-size:36px}@media screen and (max-height:512px){.g-title{font-size:27px!important}}@media screen and (max-width:480px){.g-title{font-size:27px!important}}
